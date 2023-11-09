@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="short cut icon" type="x-icon" href="icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL Media Shareing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="share-container">
+        <span>Share This:</span>
+
+        <div id="share-buttons">
+
+            <!-- facebook -->
+            <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+
+            <!-- twitter -->
+            <a class="twitter" target="blank"><i class="fab fa-twitter"></i></a>
+
+            <!-- linkedin -->
+            <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a>
+
+            <!-- reddit -->
+            <a class="reddit" target="blank"><i class="fab fa-reddit"></i></a>
+
+            <!-- whatsapp-->
+            <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
+
+            <!-- telegram-->
+            <a class="telegram" target="blank"><i class="fab fa-telegram"></i></a>
+
+        </div>
+
+    </div>
+    <script>
+        const link =encodeURI(window.location.href);
+        const msg=encodeURIComponent('hey i found this artucle');
+        const title=encodeURIComponent(document.querySelector('title').textContent);
+
+        console.log([link,msg,title]);
+
+
+    </script>
+</body>
+</html>
